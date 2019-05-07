@@ -17,5 +17,6 @@ func is_anagram(inp1: String, inp2: String) -> Int
     }
     return 1
 }
-
-print(is_anagram(inp1: "lok", inp2: "kol"))
+var first = readLine()
+var second = readLine()
+print(is_anagram(inp1: String(first ?? ""), inp2: String(second ?? "")))
