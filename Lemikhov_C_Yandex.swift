@@ -13,6 +13,18 @@ func result(inp: [Int]) -> [Int]
     out.append(current)
     return out
 }
-
-var arr: [Int] = [1, 1, 2, 3, 3, 3, 4, 6]
-print( result(inp: arr) )
+var an = readLine()
+var N = Int(String(an ?? ""))
+var arr: [Int] = []
+var temp = 0
+for i in 0...(N!-1)
+{
+	an = readLine()
+	temp = Int(String(an ?? ""))!
+	arr.append(temp)
+}
+var result_Arr: [Int] = result(inp: arr)
+for i in 0...result_Arr.count-1
+{
+	print(result_Arr[i])
+}

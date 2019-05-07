@@ -1,5 +1,5 @@
 func result(arr: [Int]){
-    var n = arr.count
+    let n = arr.count
     var max = 0
     var current = 0
     for i in 0...n-1 
@@ -31,5 +31,15 @@ func result(arr: [Int]){
     print(max)
     
 }
-let sequense: [Int] = [1, 0, 1, 1, 1, 0, 0]
+var an = readLine()
+var N = Int(String(an ?? ""))
+var sequense: [Int] = []
+var temp = 0
+for i in 0...(N!-1)
+{
+	an = readLine()
+	temp = Int(String(an ?? ""))!
+	sequense.append(temp)
+}
+	
 result(arr: sequense)

@@ -20,6 +20,6 @@ func result(precios: String, stones: String) -> Int
     }
    return s
 }
+let arrays = readLine()!.split(separator: " ")
 
-
-print( result(precios: "ab", stones: "aabbccd") )
+print( result(precios: String(arrays[0]), stones: String(arrays[1]) ) )
