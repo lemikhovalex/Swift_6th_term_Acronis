@@ -1,25 +1,32 @@
 import Foundation
 
-
-
 func result(precios: String, stones: String) -> Int
 {
-    var  pr_arr = Array(precios)
-    var  st_arr = Array(stones)
-    var s = 0
-    for i in 0...pr_arr.count-1
+    var s: Int
+    s = 0
+    var heap: [String] = []
+    
+    
+    for letter in stones
     {
-        for j in 0...st_arr.count-1
-        {
-            if(pr_arr[i] == st_arr[j])
-            {
-                s += 1
-            }
-            
+        heap.append(String(letter))
+    }
+    
+    
+    for letter in heap
+    {
+        if precios.contains(letter){
+            s += 1
         }
     }
    return s
 }
-let arrays = readLine()!.split(separator: " ")
+var jew = readLine()
 
-print( result(precios: String(arrays[0]), stones: String(arrays[1]) ) )
+var heap = readLine()
+
+if jew != nil{
+    if heap != nil{
+        print( result(precios: jew!, stones: heap! ) )
+    }
+}

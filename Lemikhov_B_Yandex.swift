@@ -1,4 +1,5 @@
-func result(arr: [Int]){
+func result(arr: [Int])
+{
     let n = arr.count
     var max = 0
     var current = 0
@@ -32,14 +33,21 @@ func result(arr: [Int]){
     
 }
 var an = readLine()
-var N = Int(String(an ?? ""))
-var sequense: [Int] = []
-var temp = 0
-for i in 0...(N!-1)
+if(an != "0")
 {
-	an = readLine()
-	temp = Int(String(an ?? ""))!
-	sequense.append(temp)
+	var N = Int(String(an ?? ""))
+	var sequense: [Int] = []
+	var temp = 0
+	for i in 0...(N!-1)
+	{
+		an = readLine()
+		temp = Int(String(an ?? ""))!
+		sequense.append(temp)
+	}
+	result(arr: sequense)
+}
+else
+{
+	print(0)
 }
 	
-result(arr: sequense)

@@ -19,5 +19,13 @@ for i in 0...N-1
 	array.removeAll()
 }
 Global_array.sort()
-print(Global_array)
+var Final_string: String
+Final_string = ""
+
+for i in 0...Global_array.count-1
+{
+	Final_string += String( Global_array[i] )
+	Final_string += " "
+}
+print(Final_string)
 

@@ -13,18 +13,23 @@ func result(inp: [Int]) -> [Int]
     out.append(current)
     return out
 }
+
+
 var an = readLine()
-var N = Int(String(an ?? ""))
-var arr: [Int] = []
-var temp = 0
-for i in 0...(N!-1)
+if(an != "0")
 {
-	an = readLine()
-	temp = Int(String(an ?? ""))!
-	arr.append(temp)
-}
-var result_Arr: [Int] = result(inp: arr)
-for i in 0...result_Arr.count-1
-{
-	print(result_Arr[i])
+	var N = Int(String(an ?? ""))
+	var arr: [Int] = []
+	var temp = 0
+	for i in 0...(N!-1)
+	{
+		an = readLine()
+		temp = Int(String(an ?? ""))!
+		arr.append(temp)
+	}
+	var result_Arr: [Int] = result(inp: arr)
+	for i in 0...result_Arr.count-1
+	{
+		print(result_Arr[i])
+	}
 }
